@@ -1,1 +1,72 @@
+*::after,
+*::before,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+}
+#content {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 25vh 5vh 1fr 5vh;
+  grid-template-columns: repeat(10, 1fr);
+}
+header {
+  background-color: rgb(0, 0, 0, 0.9);
+  grid-area: 1/1/2/-1;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  font-size: 80px;
+  max-height: 25vh;
+}
+.restaurant-name {
+  color: white;
+  align-self: center;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+nav > .tab {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  align-self: end;
+  padding: 10px;
+}
+nav > .tab:hover {
+  transform: translateY(-15%);
+  transition: transform 0.3s;
+}
+nav > .tab:focus {
+  border-bottom: 1px solid white;
+}
 
+main {
+  grid-area: 3/3/-2/-3;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: white;
+}
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home > img {
+  height: 50%;
+  width: 50%;
+}
+.home > p {
+  font-size: 24px;
+}
