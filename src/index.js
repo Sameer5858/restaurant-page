@@ -1,2 +1,2 @@
-import { aboutPage } from "./about-page";
-// aboutPage();
+import createHeader from "./initial";
+createHeader();
