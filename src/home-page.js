@@ -5,7 +5,7 @@ function homePage() {
   home.appendChild(createParagraph("Best Restaurant in the word"));
   home.appendChild(createParagraph("Made with passion since 1999"));
   const chefImg = document.createElement("img");
-  chefImg.src = "/src/chef.png";
+  chefImg.src = "../dist/img/chef.png";
   home.appendChild(chefImg);
   home.appendChild(createParagraph("Order online or visit us"));
   contentContainer.appendChild(home);

@@ -8,7 +8,7 @@ function contactPage() {
     createParagraph("🏠 Hollywood Boulevard 42, Los Angeles, USA")
   );
   const locationImg = document.createElement("img");
-  locationImg.src = "/src/location.png";
+  locationImg.src = "../dist/img/location.png";
   contact.appendChild(locationImg);
   contentContainer.appendChild(contact);
   document.querySelector(".contactBtn").classList.add("active");
