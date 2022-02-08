@@ -1,4 +1,4 @@
-import { initialPage, createHeader } from "./initial-page";
+import { initialPage } from "./initial-page";
 import { homePage } from "./home-page";
 import contactPage from "./contact-page";
 import menuPage from "./menu-page";
