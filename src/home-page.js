@@ -12,8 +12,9 @@ function homePage() {
   document.querySelector(".homeBtn").classList.add("active");
 }
 function createParagraph(text) {
-  const para = document.createElement("p");
-  para.textContent = text;
-  return para;
+  const paraDiv = document.createElement("div");
+  paraDiv.textContent = text;
+  paraDiv.classList.add("para");
+  return paraDiv;
 }
-export default homePage;
+export { homePage, createParagraph };

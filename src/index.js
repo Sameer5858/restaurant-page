@@ -1,13 +1,10 @@
-import initialPage from "./initial-page";
-import homePage from "./home-page";
+import { initialPage, createHeader } from "./initial-page";
+import { homePage } from "./home-page";
 import contactPage from "./contact-page";
-import createParagraph from "./home-page";
+import menuPage from "./menu-page";
 initialPage();
 const tabs = document.querySelectorAll(".tab");
 const contentContainer = document.getElementById("content");
-function c() {
-  loadContactPage;
-}
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     if (!tab.classList[2]) {
@@ -21,6 +18,9 @@ tabs.forEach((tab) => {
       } else if (tab.classList[0] === "contactBtn") {
         contentContainer.innerHTML = "";
         contactPage();
+      } else if (tab.classList[0] === "menuBtn") {
+        contentContainer.innerHTML = "";
+        menuPage();
       }
     }
   });

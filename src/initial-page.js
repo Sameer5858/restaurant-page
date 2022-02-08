@@ -1,4 +1,4 @@
-import homePage from "./home-page";
+import { homePage } from "./home-page";
 function createHeader() {
   const header = document.createElement("header");
   const restaurantNameDiv = document.createElement("div");
@@ -28,4 +28,5 @@ function initialPage() {
   createHeader();
   homePage();
 }
-export default initialPage;
+
+export { initialPage, createHeader };

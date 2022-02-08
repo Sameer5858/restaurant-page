@@ -1,3 +1,4 @@
+import { createParagraph } from "./home-page";
 function contactPage() {
   const contentContainer = document.getElementById("content");
   const contact = document.createElement("div");
@@ -12,9 +13,5 @@ function contactPage() {
   contentContainer.appendChild(contact);
   document.querySelector(".contactBtn").classList.add("active");
 }
-function createParagraph(text) {
-  const para = document.createElement("p");
-  para.textContent = text;
-  return para;
-}
+
 export default contactPage;
