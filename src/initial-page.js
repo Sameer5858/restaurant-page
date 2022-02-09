@@ -1,4 +1,5 @@
 import { homePage } from "./home-page";
+
 function createHeader() {
   const header = document.createElement("header");
   const restaurantNameDiv = document.createElement("div");
